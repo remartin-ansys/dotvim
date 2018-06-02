@@ -1,3 +1,12 @@
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule "bundle/gruvbox"]
+	path = bundle/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule "bundle/pencil-color"]
+	path = bundle/pencil-color
+	url = https://github.com/reedes/vim-colors-pencil.git
+[submodule "bundle/dracula-theme"]
+	path = bundle/dracula-theme
+	url = http://github.com/dracula/vim.git
