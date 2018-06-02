@@ -10,3 +10,33 @@
 [submodule "bundle/dracula-theme"]
 	path = bundle/dracula-theme
 	url = http://github.com/dracula/vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/python-mode"]
+	path = bundle/python-mode
+	url = http://github.com/klen/python-mode.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = http://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = http://github.com/ervandew/supertab.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = http://github.com/scrooloose/syntastic.git
+[submodule "bundle/tlib_vim"]
+	path = bundle/tlib_vim
+	url = http://github.com/tomtom/tlib_vim.git
+[submodule "bundle/vim-addon-mw-utils"]
+	path = bundle/vim-addon-mw-utils
+	url = http://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/vim-autoformat"]
+	path = bundle/vim-autoformat
+	url = http://github.com/Chiel92/vim-autoformat.git
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = http://github.com/garbas/vim-snipmate.git
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = http://github.com/honza/vim-snippets.git
