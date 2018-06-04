@@ -1,6 +1,5 @@
 " To execute pathogen
 execute pathogen#infect()
-execute pathogen#helptags()
 
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
@@ -129,8 +128,6 @@ set notimeout ttimeout ttimeoutlen=200
 " Use <F11> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F11>
  
-" Limit characters
-set textwidth=80
  
 "------------------------------------------------------------
 " Indentation options {{{1
@@ -165,6 +162,8 @@ nnoremap <C-L> :nohl<CR><C-L>
 "------------------------------------------------------------
 
 "To set up basic coloring
+set background=dark
+colorscheme Monokai
 set background=dark
 colorscheme gruvbox
 
