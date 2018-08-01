@@ -1,5 +1,6 @@
 " To execute pathogen
 execute pathogen#infect()
+Helptags
 
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
@@ -162,8 +163,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 "------------------------------------------------------------
 
 "To set up basic coloring
-set background=dark
 colorscheme Monokai
-set background=dark
 colorscheme gruvbox
+set background=dark
 
