@@ -1,0 +1,6 @@
+# Ignore all subdirectories in this folder
+*/
+
+# But keep these specific subdirectories
+!/Vundle.vim/
+

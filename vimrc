@@ -1,20 +1,9 @@
-" To execute pathogen
-execute pathogen#infect()
-Helptags
-
-" URL: http://vim.wikia.com/wiki/Example_vimrc
-" Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
-" Description: A minimal, but feature rich, example .vimrc. If you are a
-"              newbie, basing your first .vimrc on this file is a good choice.
-"              If you're a more advanced user, building your own .vimrc based
-"              on this file is still a good idea.
- 
 "------------------------------------------------------------
-" Features {{{1
+" Features
 "
 " These options and commands enable some very useful features in Vim, that
 " no user should have to live without.
- 
+" 
 " Set 'nocompatible' to ward off unexpected things that your distro might
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
@@ -22,14 +11,72 @@ set nocompatible
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
 " and for plugins that are filetype specific.
-filetype indent plugin on
- 
+
+" Changes for Vundle
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+" Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+" Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
+Plugin 'patstockwell/vim-monokai-tasty'
+Plugin 'ku1ik/vim-monokai'
+Plugin 'Raimondi/delimitMate'
+Plugin 'preservim/nerdtree'
+Plugin 'preservim/nerdcommenter'
+Plugin 'morhetz/gruvbox'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'tmhedberg/simpylfold'
+Plugin 'ervandew/supertab'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'vim-autoformat/vim-autoformat'
+Plugin 'tpope/vim-git'
+" Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
 " Enable syntax highlighting
 syntax on
+filetype indent plugin on
  
- 
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
 "------------------------------------------------------------
-" Must have options {{{1
+" Must have options
 "
 " These are highly recommended options.
  
@@ -71,7 +118,7 @@ set hlsearch
  
  
 "------------------------------------------------------------
-" Usability options {{{1
+" Usability options
 "
 " These are options that users frequently set in their .vimrc. Some of them
 " change Vim's behaviour in ways which deviate from the true Vi way, but
@@ -163,7 +210,6 @@ nnoremap <C-L> :nohl<CR><C-L>
 "------------------------------------------------------------
 
 "To set up basic coloring
-colorscheme Monokai
 colorscheme gruvbox
 set background=dark
 
